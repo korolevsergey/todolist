@@ -7,8 +7,8 @@ include ("blocks/db.php");
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>SIMPLE TODO LIST</title>
 <link href="style.css" rel="stylesheet" type="text/css">
-<meta name="description" content="Рушник - сайт знакомств для православных христиан, поможет найти свою любовь и друзей. Знакомства для любви, брака, серьезных отношений.">
-<meta name="keywords" content="Православные знакомства, объявления, знакомство для брака, серьезных отношений, клуб православных друзей, анкеты, найти любовь.">
+<meta name="description" content="">
+<meta name="keywords" content="">
 </head>
 
 <body>
@@ -55,9 +55,11 @@ $_SESSION['password']=$password;
 $_SESSION['login']=$login; 
 
 
-echo "<html><head><meta http-equiv='Refresh' content='5'; URL=index.php'></head><body>
+echo "<html><head><meta http-equiv='Refresh' content='5; URL=index.php'></head><body>
 <div align='center'><font size='3'>
-Registration was successful! <a style='color:#336699' href='index.php'>Go back!</a></font></div></body></html>" ;
+<div style='padding:10px;'>Registration was successful! <a style='color:#336699' href='index.php'>Go back!</a></div></font></div></body></html>" ;
+
+
 }
 else {
 exit ("<div align='center'><font size='3'>Error! You are not logged in. <a style='color:#336699' href='index.php'>Go back!</a></font></div>"); //?eaa
